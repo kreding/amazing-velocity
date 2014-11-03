@@ -10,7 +10,7 @@ import javax.servlet.ServletContext;
  */
 public class FisBean implements ServletContextAware {
 
-    @Override
+//    @Override
     public void setServletContext(ServletContext servletContext) {
         Settings.setApplicationAttribute(ServletContext.class.getName(), servletContext);
         Settings.load(servletContext.getResourceAsStream(Settings.DEFAULT_PATH));
