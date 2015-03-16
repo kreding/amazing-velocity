@@ -197,7 +197,7 @@ public class RewriteFilter implements Filter {
                 }
             }
         } else if (path.endsWith(".json")) {
-            resp.addHeader("Content-Type", "application/json");
+            resp.addHeader("Content-Type", "application/json; charset=utf-8");
         }
         return false;
     }
