@@ -38,7 +38,7 @@ public class VelocityTestServlet extends HttpServlet {
                     data += inputLine;
                 }
                 in.close();
-
+                response.addHeader("Content-type", "application/json; charset=utf-8");
                 response.getWriter().write(data);
             }
         } catch (Exception e) {
